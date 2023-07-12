@@ -4,7 +4,7 @@ public abstract class Pessoa {
     private String sexo;
 
     public final void fazerAniversario(){
-
+        this.idade++;
     }
 
     public String getNome() {
@@ -31,5 +31,9 @@ public abstract class Pessoa {
         this.sexo = sexo;
     }
 
+    @Override
+    public String toString() {
+        return "Dados [nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + "]";
+    }
     
 }
